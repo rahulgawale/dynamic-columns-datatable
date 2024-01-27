@@ -1,0 +1,27 @@
+<!-- sldsValidatorIgnore -->
+<template>
+    <lightning-card
+        icon-name="standard:data"
+        variant="narrow"
+    >
+        <div slot="title">
+            Dynamic Column Data Table
+        </div>
+        <div slot="actions">
+
+        </div>
+
+        <div slot="footer">
+
+        </div>
+        <div>
+
+            <lightning-datatable
+                key-field="Id"
+                data={opportunities}
+                columns={columns}
+            ></lightning-datatable>
+
+        </div>
+    </lightning-card>
+</template>

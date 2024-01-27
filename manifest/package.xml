@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    
+    <types>
+        <members>Datatable_Column__mdt</members>
+        <name>CustomObject</name>
+    </types>
+    <types>
+        <members>npsp__Rollup.NPSP_GAUNumAllosThisYear</members>
+        <name>CustomMetadata</name>
+    </types>
+    <version>59.0</version>
+</Package>
