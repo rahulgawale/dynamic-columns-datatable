@@ -1,8 +1,11 @@
 # Salesforce DX Project: How to use
 
+1. Open command prompt.
 1. Clone the repo using below command.
-    `gh repo clone rahulgawale/dynamic-columns-datatable`
-2. Open the project in VS Code.
+    - `git clone https://github.com/rahulgawale/dynamic-columns-datatable.git`
+2. Open the project in VS Code using the command below.
+    - `cd dynamic-columns-datatable`
+3. Open VS Code with command `code .`.
 3. Authorize your org and deploy the components into your target org.
 4. Deploy below mentioned components to your org.
     - classes
