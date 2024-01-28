@@ -3,7 +3,7 @@
 1. Open command prompt.
 1. Clone the repo using below command.
     - `git clone https://github.com/rahulgawale/dynamic-columns-datatable.git`
-2. Open the project in VS Code using the command below.
+2. Open the project directory using the command below.
     - `cd dynamic-columns-datatable`
 3. Open VS Code with command `code .`.
 3. Authorize your org and deploy the components into your target org.
