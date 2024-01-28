@@ -1,27 +1,19 @@
 <!-- sldsValidatorIgnore -->
 <template>
     <lightning-card
-        icon-name="standard:data"
+        icon-name="standard:portal_roles_and_subordinates"
         variant="narrow"
     >
-        <div slot="title">
-            Dynamic Column Data Table
-        </div>
-        <div slot="actions">
+        <div slot="title">Dynamic Column Data Table</div>
+        <div slot="actions"></div>
 
-        </div>
-
-        <div slot="footer">
-
-        </div>
+        <div slot="footer"></div>
         <div>
-
             <lightning-datatable
                 key-field="Id"
                 data={opportunities}
                 columns={columns}
             ></lightning-datatable>
-
         </div>
     </lightning-card>
 </template>

@@ -21,7 +21,10 @@ export default class DynamicColumnsDatatable extends LightningElement {
             this.columns = data.columnsInfo.map((col) => ({
                 label: col.Field_Label__c,
                 fieldName: col.Field_Api__c,
-                type: col.Data_Type__c || "text",
+                type: this.getDataType(
+                    col.Data_Type__c,
+                    col.Custom_Type_Name__c
+                ),
                 initialWidth: col.Initial_Width__c,
                 // if any additional column info provided in JSON.
                 ...this.getAdditionalColumnInfo(col.Additional_Props_JSON__c)
@@ -39,5 +42,13 @@ export default class DynamicColumnsDatatable extends LightningElement {
             console.error("error while parsing additional column info", e);
             return {};
         }
+    }
+
+    getDataType(type, custom) {
+        if (!type) return "text";
+        if (type === "custom") {
+            return custom;
+        }
+        return type;
     }
 }
